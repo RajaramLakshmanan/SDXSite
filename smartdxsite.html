@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartDX-Site</title>
+    <style>
+        /* h1, {
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>SmartDX-Site</h1>
+        <button>Click me</button>
+    </center>
+</body>
+<script>
+
+    document.querySelector("button").addEventListener("click", () => {
+        let _url = "https://visionarybank.smartdx.co/?_sdxFormId=NDk=&path=/preferences/brand-own-form?cId=49&webft=true";
+        let win = window.open(_url, '_blank');
+
+    })
+
+</script>
+
+</html>
+
+
+export const GET_CONSUMABLE_INVOCE_LIST     = "Accountsubscription/GetConsumableInvList"
+export const GET_CONSUMABLE_INVOCE_DETAILS  = "Accountsubscription/GetConsumableInvById"
