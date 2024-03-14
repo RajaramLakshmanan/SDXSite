@@ -20,6 +20,11 @@
 </body>
 <script>
 
+    window.addEventListener('message', function(event) {
+  var messageReceived = event.data;
+  document.querySelector('p').textContent = messageReceived;
+});
+
     document.querySelector("button").addEventListener("click", () => {
         let _url = "https://rajaramlakshmanan.github.io/SDKSite/sdksite.html";
         let win = window.open(_url, '_blank');
